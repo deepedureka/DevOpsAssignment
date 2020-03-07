@@ -1,0 +1,291 @@
+  227  apt install git  -y
+  229  apt install git* -y
+  230  apt install git* -y -f
+  231  git
+  233  service git status
+  242  mkdir git-demo
+  243  cd git-demo/
+  248  mv git-demo/ projects
+  252  git init
+  254  cd .git/
+  261  git status
+  262  git add index.html
+  263  git status
+  264  git commit -m "First commit"
+  265  git status
+  267  git status
+  268  git log
+  269  git log -v f86b18a3f38f68c6733bba33dc26a7206ee5a2af
+  270  git log -oneline
+  271  git log --oneline
+  273  git log --oneline
+  274  git log f86b18a
+  275  git ls-repo
+  276  git ls
+  277  git ls repo
+  279  git ls-repo
+  281  git ls-files
+  286  git add -a -m "second commit"
+  287  git status
+  288  git add -a
+  289  git add -A
+  290  git commit -m "Second Commit"
+  294  git ls-files
+  298  git status
+  299  git diff index.html
+  300  git add -A
+  301  git status
+  302  git diff index.html
+  303  git diff --staged index.html
+  307  git status
+  308  git diff index.html
+  309  git diff --staged index.html
+  311  git add -A
+  312  git commit -m "updated first commit"
+  313  git status
+  316  git add -A
+  317  git commit -m "Adding file.txt for RM purpose"
+  318  git status
+  320  git status
+  322  git rm file.txt 
+  323  git status
+  327  git commit -m "remove file.txt from git"
+  328  git status
+  332  git add -A -M "File removal from local repo"
+  333  git add -A -m "File removal from local repo"
+  334  git status
+  335  git commit -m "File removal from local repo"
+  336  git add - A
+  337  git add -A
+  338  git commit -m "File removal from local repo"
+  339  git status
+  341  git ls-files
+  344  git log
+  345  git log --oneline
+  347  git rm -cached file.txt 
+  349  git rm --cached file.txt 
+  351  git ls-files
+  353  git status
+  355  git status
+  356  vim .gitignore
+  357  git status
+  358  git add .gitignore 
+  359  git commit -m "added .gitignore for not tracking of files"
+  362  git status
+  363  git log --oneline
+  364  git commit --amend -m "Updating commit for top one .gitignore"
+  365  git log --oneline
+  367  git log --online
+  368  git log --oneline
+  369  git tag --a v1.0 a947bc9 -m "Adding tag for baselining"
+  370  git show
+  372  git status
+  374  git tag
+  375  git show v1.0
+  376  git status
+  382  git add file2.txt 
+  383  git commit -m "Adding file for revert purpose"
+  384  git status
+  386  git log --oneline
+  387  git revert 9628872
+  388  git status
+  390  git log --oneline
+  392  git ls-files
+  393  git log --oneline
+  397  git add -A commit -m "Reset command usage for destructive command"
+  398  git add -A
+  399  git commit -m "Reset command for destructive"
+  400  git statsu
+  401  git log
+  405  git log --oneline
+  406  git reset --hard 9195eee
+  407  git log --oneline
+  408  git reset --hard f4d38b9
+  410  git log --oneline
+  412  history | grep git
+  414  git branch
+  415  git checkout -b b1
+  416  git branch
+  419  git branch
+  420  git log --oneline
+  422  git log --oneline b1
+  423  git log --oneline master
+  424  git status
+  428  git add -A
+  429  git commit -m "New file added in B1 branch"
+  430  git status
+  432  git log --online
+  433  git log --oneline
+  434  git log master
+  436  git log --oneline master
+  437  git log --oneline b1
+  438  git status
+  440  git checkout master
+  441  git branch
+  442  git ls-files
+  443  git checkout b1
+  444  git checkout -b b1
+  445  git branch
+  446  git ls-files
+  447  git checkout master
+  448  git merge b1
+  449  git ls-files
+  450  git log --oneline master
+  451  git log --oneline b1
+  453  git status
+  454  git branch
+  455  git checkout b1
+  456  git ls-files
+  458  git branch
+  459  git ls-files
+  466  git status
+  468  git branch
+  470  git add -A
+  471  git commit -m "corrected the name of index3.html"
+  472  git status
+  474  git ls-files
+  475  git checkout master
+  476  git status
+  477  git ls-files
+  481  git branch
+  482  git status
+  483  git commit -m "Modified index3.html for conflict resoloution purpose"
+  484  git status
+  485  git add -A
+  486  git commit -m "Modified index3.html for conflict resoloution purpose"
+  488  git status
+  490  git ls
+  491  git ls-files
+  492  git ls-repos
+  495  git branch
+  496  git merge b1
+  498  git branch
+  499  git status
+  500  git add -A
+  501  git commit -m "Resolved conflictwq"
+  502  git status
+  504  git merge b1
+  506  git branch
+  508  history | grep git
+  510  git checkout master
+  512  git ls-files
+  513  git log --oneline master
+  515  git ls-files
+  519  git status
+  520  git stash
+  521  git log --oneline
+  522  git status
+  524  git stashlist
+  525  git stash list
+  526  git show stash@{0}
+  527  git stash pop stash@{0}
+  528  git status
+  530  git status
+  531  git stash
+  532  git stash list
+  533  git stash pop stash@{0}
+  534  git status
+  536  git stash list
+  537  git stash
+  538  git status
+  540  git stash apply stash@{0}
+  541  git status
+  542  git stash list
+  545  history | grep git revert
+  549  history | grep git
+  551  git branch
+  553  git remote add origin "https://github.com/deepedureka/TestingPOC.git"
+  554  git push origin master
+  555  git remote show
+  556  git remote add origin "https://github.com/deepedureka/demo.git"
+  557  git remote show
+  558  git remove rm
+  559  git remote --help
+  560  git remote -v
+  561  git remote set-url "https://github.com/deepedureka/demo.git"
+  562  git remote -v
+  563  git remote remove origin
+  564  git remote -v
+  566  git remote add origin "https://github.com/deepedureka/demo.git"
+  568  git branch
+  569  git push origin master
+  576  git clone https://github.com/deepedureka/FirstTest.git
+  580  git remote -v
+  582  git pull origin
+ 1025  git log --oneline
+ 1029  git status
+ 1032  git status
+ 1036  git status
+ 1037  git log --oneline
+ 1038  git amend 37cce83 -m "This is new commit message"
+ 1041  history | grep git
+ 1042  git branch
+ 1043  git log --oneline
+ 1044  git --amend commit -m "update amend message"
+ 1045  git --ammend commit -m "update amend message"
+ 1046  git commit --amend -m "change the log file"
+ 1051  git branch
+ 1052  git checkout master
+ 1053  git branch
+ 1054  git status
+ 1055  git commit --amend -m "update log files"
+ 1056  git config --global user.name "deepchaudhary@Hotmail.com"
+ 1057  git config --global user.email "deepchaudhary@Hotmail.com"
+ 1058  git commit --amend -m "update log files"
+ 1059  git log --oneline
+ 1060  git commit --amend -m "update log files for top most"
+ 1061  git log --oneline
+ 1062  git commit --amend -m "update log files for top most" c986b9e
+ 1063  git commit --amend c986b9e -m "update log files for top most"
+ 1067  git status
+ 1068  git add -a
+ 1069  git add -A
+ 1070  git status
+ 1071  git diff test123.txt
+ 1072  git commit -m "test123"
+ 1073  git status
+ 1074  git remove -V
+ 1075  git remove -v
+ 1076  git remote -v
+ 1077  git fetch
+ 1078  git status
+ 1079  git pull
+ 1080  git pull https://github.com/deepedureka/DevOpsAssignment.git
+ 1081  git status
+ 1082  git ls
+ 1083  git ls-files
+ 1086  git staus
+ 1087  git status
+ 1088  git log --oneline
+ 1089  git revert 9ba8387
+ 1090  git status
+ 1091  git log --oneline
+ 1092  git reset db2aa8e
+ 1093  git status
+ 1094  git commit -m "restet"
+ 1095  git add -A
+ 1096  git commit -m "restet"
+ 1097  git status
+ 1098  git log --oneline
+ 1099  git reset hard db2aa8e
+ 1100  git reset --hard db2aa8e
+ 1101  git log --oneline
+ 1102  git status
+ 1104  git status
+ 1105  git stash
+ 1106  git status
+ 1107  git stash list
+ 1108  git status
+ 1109  git add -A
+ 1110  git stash
+ 1111  git stash list
+ 1113  git status
+ 1114  git stash list
+ 1115  git stash pop stash@{0}
+ 1116  git status
+ 1117  git stash
+ 1118  git stash list
+ 1119  git stash apply stash@{0}
+ 1120  git status
+ 1121  git stash list
+ 1122  history | grep git >> gitusedcommands.txt
